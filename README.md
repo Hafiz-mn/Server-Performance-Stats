@@ -42,6 +42,7 @@ These utilities are available by default on most Linux distributions.
 ## Installation
 
 Clone the repository:
+git clone https://github.com/Hafiz-mn/Server-Performance-Stats.git
 
 ```bash
 
