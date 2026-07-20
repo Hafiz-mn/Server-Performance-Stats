@@ -1,0 +1,44 @@
+#!/bin/bash
+
+echo;echo "== System =="
+
+echo " "
+hostnamectl | grep -E 'Operating System|Kernel| Architecture'
+
+
+echo; echo "== CPU =="
+
+echo " "
+
+lscpu | egrep 'Model name|CPU|Thread|Core|MHz'
+
+echo; echo "== MEM =="
+
+
+free -h
+
+echo; echo "== DISK USAGE =="
+
+echo " "
+
+df -h
+
+echo; echo "== TOP PROCESSES BY CPU =="
+
+
+echo " "
+
+
+ps aux --sort=-%cpu | head -n 6
+
+echo; echo "==TOP PROCESSES BY MEM =="
+
+echo " "
+
+ps aux --sort=-%mem | head -n 6
+
+echo; echo "=========================="
+
+ 
+
+
